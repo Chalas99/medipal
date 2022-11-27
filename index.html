@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>medipal</title>  
+    <title>MediPal</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -45,13 +45,14 @@
     <!-- END LOADER -->
 	
 	<!-- Start top bar -->
+	<!--
 	<div class="main-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="left-top">
-						<a class="new-btn-d br-2" href="#"><span>Book Appointment</span></a>
-						<div class="mail-b"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> demo@gmail.com</a></div>
+						<a class="new-btn-d br-2" href="#"><span>prescription appointment</span></a>
+						<div class="mail-b"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> mediPal@gmail.com</a></div>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -70,13 +71,14 @@
 			</div>
 		</div>
 	</div>
+-->
 	<!-- End top bar -->
 	
 	<!-- Start header -->
 	<header class="top-header">
 		<nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
-				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" style="width: 60px;" alt="image"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
 					<span></span>
 					<span></span>
@@ -92,6 +94,7 @@
 						<li><a class="nav-link" href="#team">Doctor</a></li>
                         <li><a class="nav-link" href="#blog">Blog</a></li>
 						<li><a class="nav-link" href="#contact">Contact</a></li>
+						<li style="align-items: right;"><a class="nav-link" href="#contact"><i class="fa fa-fw fa-user"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -107,7 +110,7 @@
 					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-01.jpg);">
 						<div class="lbox-caption pogoSlider-slide-element">
 							<div class="lbox-details">
-								<h1>Welcome to Health Lab</h1>
+								<h1>Welcome to MediPal</h1>
 								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>
 								<a href="#" class="btn">Contact Us</a>
 							</div>
@@ -146,7 +149,8 @@
 					<div class="col-lg-12">
 						<div class="title-box">
 							<h2>About Us</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							<p>We cater the opportunity to find medicines 
+								conveniently.</p>
 						</div>
 					</div>
 				</div>
@@ -155,8 +159,7 @@
 						<div class="row align-items-center about-main-info">
 							<div class="col-lg-6 col-md-6 col-sm-12">
 								<h2> Welcome to Health Lab </h2>
-								<p>We are a team of second-year undergraduates from the Department of Industrial Management 
-									of the University of Kelaniya.</p>
+								
 								<p>With the help of our web application, we cater the opportunity to find medicines 
 									conveniently. When patients upload their prescription to the system, we hope that the 
 									system will provide information about pharmacies that have the relevant medicine as 
@@ -209,7 +212,7 @@
 								<div class="service-icon"><i class="fa fa-h-square" aria-hidden="true"></i></div>
 								<h3 class="title">Lorem ipsum dolor</h3>
 								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+									Get medicine delivered from a pharmacy at any distance if it is not accessible in a nearby pharmacy.
 								</p>
 								<a href="#" class="new-btn-d br-2">Read More</a>
 							</div>
@@ -219,7 +222,7 @@
 								<div class="service-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
 								<h3 class="title">Lorem ipsum dolor</h3>
 								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+									Locate medication at the nearest pharmacy.
 								</p>
 								<a href="#" class="new-btn-d br-2">Read More</a>
 							</div>
@@ -229,7 +232,7 @@
 								<div class="service-icon"><i class="fa fa-hospital-o" aria-hidden="true"></i></div>
 								<h3 class="title">Lorem ipsum dolor</h3>
 								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
+									Get the medicines delivered to your door step or order them for later pickup.
 								</p>
 								<a href="#" class="new-btn-d br-2">Read More</a>
 							</div>
@@ -301,8 +304,8 @@
 	</div>
 	<!-- End Services -->
 	
-	<!-- Start Appointment -->
-	<div id="appointment" class="appointment-main">
+	<!-- Start prescription upload -->
+	<div id="prescription" class="prescription-main">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">

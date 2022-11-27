@@ -12,7 +12,7 @@
 @import url(font-awesome.min.css);
 @import url(magnific-popup.css);
 @import url(responsiveslides.css);
-@import url(owl.carousel.min.css);s
+@import url(owl.carousel.min.css);
 @import url(flaticon.css);
 
 /*------------------------------------------------------------------
@@ -316,7 +316,7 @@ button:focus{
 }
 
 .top-header{
-	background: #ffffff;
+	background: #074081;
 	position: relative;
 	top: 0px;
 	left: 0px;
@@ -331,6 +331,7 @@ button:focus{
 	padding: 10px 15px;
 	position: relative;
 	font-weight: 500;
+	color: #f2f3f5;
 }
 
 
@@ -875,7 +876,7 @@ button:focus{
     Appointment
 -------------------------------------------------------------------*/
 
-.appointment-main{
+.prescription-main{
 	padding: 70px 0px;
 	position: relative;
 }
