@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,7 +114,7 @@ a:link {
           <h1 class="login">Login</h1>
           <h4>doesn't have an acount yet ??</h4><br>
 
-          <form class="form-control">
+          <form class="form-control" action="" method="post">
           <label for="email"><b>Email</b></label><br>
           <input type="text" placeholder="Enter Email" name="email" required><br>
 
