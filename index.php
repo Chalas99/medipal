@@ -1,6 +1,31 @@
 <?php
+   include("config.php");
+   session_start();
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form 
+      
+      $email = mysqli_real_escape_string($conn,trim($_POST['email']));
+      $password = mysqli_real_escape_string($conn,trim($_POST['password'])); 
+      
+      $sql = "SELECT userID FROM users WHERE email = '$email' and password = '$password'";
+      $result = mysqli_query($conn,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $active = $row['active'];
+      
+      $count = mysqli_num_rows($result);
+      
+      // If result matched $myusername and $mypassword, table row must be 1 row
+		
+      if($count == 1) {
+         $_SESSION['login_user'] = $email;
+         
+         header("location: ./homepage.php");
+      }else {
+         $error = "Your Login Name or Password is invalid";
+      }
+   }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -119,7 +144,7 @@ a:link {
           <input type="text" placeholder="Enter Email" name="email" required><br>
 
           <label for="psw"><b>Password</b></label><br>
-          <input type="password" placeholder="Enter Password" name="psw" required><br>
+          <input type="password" placeholder="Enter Password" name="password" required><br>
               
           <input type="checkbox" checked="checked" name="remember"> Remember me
           </label><br>
