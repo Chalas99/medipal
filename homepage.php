@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
 <head>
@@ -94,9 +98,29 @@
 						<li><a class="nav-link" href="#team">Doctor</a></li>
                         <li><a class="nav-link" href="#blog">Blog</a></li>
 						<li><a class="nav-link" href="#contact">Contact</a></li>
-						<li style="align-items: right;"><a class="nav-link" href="#contact"><i class="fa fa-fw fa-user"></i></a></li>
                     </ul>
                 </div>
+				<div>
+						<div class="action">
+							<div class="" onclick="menuToggle();">
+							<i class="fa fa-fw fa-user"></i>
+							<p><?php echo $_SESSION["login_user"]; ?></p>
+							</div>
+							<div class="menu">
+								<ul>
+								<li>
+									<a href="logout.php">Logout</a>
+								</li>
+								</ul>
+							</div>
+						</div>
+						<script>
+						function menuToggle() {
+							const toggleMenu = document.querySelector(".menu");
+							toggleMenu.classList.toggle("active");
+						}
+						</script>
+				</div>
             </div>
         </nav>
 	</header>
