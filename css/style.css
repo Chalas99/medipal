@@ -331,7 +331,7 @@ button:focus{
 	padding: 10px 15px;
 	position: relative;
 	font-weight: 500;
-	color: #f2f3f5;
+	color: #074081;
 }
 
 
@@ -1181,7 +1181,7 @@ button:focus{
 }
 .blog-inner{
 	background: #ffffff;
-	text-align: center;
+	text-align: justify;
 	margin-bottom: 30px;
 	border: 10px solid #fff;
 	box-shadow: 0 2px 5px rgba(0,0,0,.1);
